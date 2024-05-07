@@ -1,5 +1,5 @@
 # Verificação de Número de Conta Bancária
-## Descrição
+## Instruções
 Você está desenvolvendo um programa simples em Java para verificar se um número de conta bancária é válido. O número da conta deve ter exatamente 8 dígitos.
 
 ## Entrada

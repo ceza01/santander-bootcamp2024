@@ -1,5 +1,5 @@
 # Operações Bancárias Simples com Switch
-## Descrição
+## Instruções
 Você está desenvolvendo um programa simples em Java para simular operações bancárias básicas. A aplicação deve permitir ao usuário realizar depósitos, saques e consultar o saldo em uma conta bancária virtual.
 
 ## Entrada
@@ -28,8 +28,8 @@ Se o usuário escolher:
 
 A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
-| Entrada | Saída |
-| ------- | ----- |
-| 1<br>50<br>2<br>100<br>0 | Saldo atual: 50.0<br>Saldo insuficiente.<br>Programa encerrado. |
-| 3<br>1<br>550<br>0 | Saldo atual: 0.0<br>Saldo atual: 550.0<br>Programa encerrado. |
+| Entrada                    | Saída                                                            |
+|----------------------------|------------------------------------------------------------------|
+| 1<br>50<br>2<br>100<br>0   | Saldo atual: 50.0<br>Saldo insuficiente.<br>Programa encerrado.  |
+| 3<br>1<br>550<br>0         | Saldo atual: 0.0<br>Saldo atual: 550.0<br>Programa encerrado.    |
 | 1<br>1000<br>2<br>500<br>0 | Saldo atual: 1000.0<br>Saldo atual: 500.0<br>Programa encerrado. |

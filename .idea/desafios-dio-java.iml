@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/conta-banco/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/controle-fluxo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/condicoes-loops-excecoes/simulacao-bancaria" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/condicoes-loops-excecoes/verificador-cheque-especial" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/condicoes-loops-excecoes/verificador-idade" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/condicoes-loops-excecoes/verificador-num-conta" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
