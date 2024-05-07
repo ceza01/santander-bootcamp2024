@@ -3,7 +3,6 @@
 Você está desenvolvendo um programa simples em Java para simular operações bancárias básicas. A aplicação deve permitir ao usuário realizar depósitos, saques e consultar o saldo em uma conta bancária virtual.
 
 ## Entrada
-
 O programa exibirá um menu com as seguintes opções:
 
 1. Depositar
