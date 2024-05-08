@@ -7,21 +7,18 @@ public class ControleSimplesDeSaques {
 
         double limiteDiario = scanner.nextDouble();
 
-// TODO: Crie um loop 'for' para iterar sobre os saques:
-
-// TODO: Solicite ao usuário o valor do saque:
-
-
-// TODO: Verifique se o valor do saque é zero, encerrando as transações:
-// Dica: Utilize um 'if/else' para verificar as condições do valorSaque e o limiteDiario;
-
-
-// TODO: Se o valor do saque não ultrapassar o limite diário, subtraia o valor do saque do limite diário:
-
-
-// TODO: Informe que o saque foi realizado e mostre o limite restante:
-
+        for (int i= 0; limiteDiario >= 0; i++ ){
+            double valorSaque = scanner.nextDouble();
+            if (valorSaque == 0){
+                System.out.println("Transacoes encerradas.");
+                System.exit(0);
+            } else if (valorSaque <= limiteDiario){
+                double limiteAtual = limiteDiario - valorSaque;
+                System.out.println("Saque realizado. Limite restante: " + limiteAtual);
+            } else {
+                System.out.println("Limite diario de saque atingido. Transacoes encerradas.");
+            }
+        }
         scanner.close();
     }
-
 }
