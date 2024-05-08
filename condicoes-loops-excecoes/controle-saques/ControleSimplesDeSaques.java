@@ -17,6 +17,7 @@ public class ControleSimplesDeSaques {
                 System.out.println("Saque realizado. Limite restante: " + limiteAtual);
             } else {
                 System.out.println("Limite diario de saque atingido. Transacoes encerradas.");
+                System.exit(0);
             }
         }
         scanner.close();
