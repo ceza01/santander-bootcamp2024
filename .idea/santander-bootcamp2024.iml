@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/condicoes-loops-excecoes/verificador-cheque-especial" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/condicoes-loops-excecoes/verificador-idade" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/condicoes-loops-excecoes/verificador-num-conta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/poo/modelagem-uml/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
