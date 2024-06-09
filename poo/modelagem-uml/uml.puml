@@ -1,0 +1,37 @@
+@startuml
+
+interface NavegadorInternet {
+~ void exibirPagina(String)
+~ void atualizarPagina()
+~ void adicionarNovaAba()
+}
+
+interface AparelhoTelefonico {
+~ void ligar(String)
+~ void atender()
+~ void iniciarCorreioVoz()
+}
+
+class Iphone {
++ void ligar(String)
++ void atender()
++ void iniciarCorreioVoz()
++ void exibirPagina(String)
++ void atualizarPagina()
++ void adicionarNovaAba()
++ void tocar()
++ void pausar()
++ void selecionarMusica(String)
+}
+
+interface ReprodutorMusical {
+~ void tocar()
+~ void pausar()
+~ void selecionarMusica(String)
+}
+
+
+AparelhoTelefonico <|.. Iphone
+NavegadorInternet <|.. Iphone
+ReprodutorMusical <|.. Iphone
+@enduml
