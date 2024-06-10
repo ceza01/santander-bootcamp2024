@@ -11,6 +11,8 @@
       <sourceFolder url="file://$MODULE_DIR$/condicoes-loops-excecoes/verificador-idade" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/condicoes-loops-excecoes/verificador-num-conta" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/poo/modelagem-uml/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/poo/collections/list/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" generated="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
