@@ -16,25 +16,42 @@ public class CarrinhoDeCompras {
 
     public void removerItem(String nome){
         List<Item> listaRemover = new ArrayList<>();
-        for (Item i : carrinho){
-            if(i.getNome().equalsIgnoreCase(nome)){
-                listaRemover.add(i);
+        if (!carrinho.isEmpty()){
+            for (Item i : carrinho){
+                if(i.getNome().equalsIgnoreCase(nome)){
+                    listaRemover.add(i);
+                }
             }
+            carrinho.removeAll(listaRemover);
+        } else {
+            throw new RuntimeException("O carrinho está vazinho!");
         }
-        carrinho.removeAll(listaRemover);
+
     }
 
     public double calcularValorTotal(){
         double valorTotal = 0;
-        for (Item item : carrinho){
-            double valorItem = item.getQuantidade() * item.getPreco();
-            valorTotal += valorItem;
+        if (!carrinho.isEmpty()) {
+            for (Item item : carrinho){
+                double valorItem = item.getQuantidade() * item.getPreco();
+                valorTotal += valorItem;
+            }
         }
         return valorTotal;
     }
 
     public void exibirItens(){
-        System.out.println(carrinho);
+        if (!carrinho.isEmpty()){
+            System.out.println(carrinho);
+        } else {
+            System.out.println("O carrinho está vazinho!");
+        }
     }
 
+    @Override
+    public String toString() {
+        return "CarrinhoDeCompras{" +
+                "itens=" + carrinho +
+                '}';
+    }
 }
