@@ -1,6 +1,5 @@
 package pesquisa;
 
-import java.util.Formattable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,15 +14,13 @@ public class ContagemPalavras {
         mapPalavras.put(palavra, contagem);
     }
 
-    public void removerPalavra(String palavra){
-        if (mapPalavras.isEmpty()){
-            System.out.println("Nenhuma palavra armazenada.");
-        }else {
-            mapPalavras.remove(palavra);
+    public void removerPalavra(String palavra) {
+        if (mapPalavras.remove(palavra) == null) {
+            System.out.println("Palavra não encontrada: " + palavra);
         }
     }
 
-    public int exibirContagemPalavras(){
+    public int exibirContagemPalavras() {
         int contagemTotal = 0;
         for (int contagem : mapPalavras.values()) {
             contagemTotal += contagem;
@@ -31,18 +28,20 @@ public class ContagemPalavras {
         return contagemTotal;
     }
 
-    public String encontrarPalavraMaisFrequente(){
+    public String encontrarPalavraMaisFrequente() {
         String palavraMaisFrequente = null;
         int quantidade = 0;
-        if (!mapPalavras.isEmpty()){
-            for (Map.Entry<String, Integer> palavras : mapPalavras.entrySet()){
-                int contagemMaisUsada = palavras.getValue();
-                if (contagemMaisUsada > quantidade){
-                    quantidade = contagemMaisUsada;
-                    palavraMaisFrequente = palavras.getKey();
-                }
+
+        for (Map.Entry<String, Integer> palavras : mapPalavras.entrySet()) {
+            if (palavras.getValue() > quantidade) {
+                quantidade = palavras.getValue();
+                palavraMaisFrequente = palavras.getKey();
             }
         }
-        return palavraMaisFrequente + "Número de vezes: " + quantidade;
+        if (palavraMaisFrequente == null){
+            return "Nenhuma palavra armazenada";
+        }
+
+        return palavraMaisFrequente + "\nNúmero de vezes: " + quantidade;
     }
 }
