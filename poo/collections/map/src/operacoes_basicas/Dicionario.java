@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Dicionario {
-    Map<String, String> mapDicionario;
+    private Map<String, String> mapDicionario;
 
     public Dicionario() {
         this.mapDicionario = new HashMap<>();
@@ -27,15 +27,7 @@ public class Dicionario {
     }
 
     public String pesquisarPorPalavra(String palavra){
-        String palavraPesquisa = null;
-        if (!mapDicionario.isEmpty()) {
-            palavraPesquisa = mapDicionario.get(palavra);
-            if (palavraPesquisa == null){
-                return "Palavra não encontrada.";
-            }
-        } else {
-            return "Dicionário vazio.";
-        }
-        return palavraPesquisa;
+        String definicao = mapDicionario.get(palavra);
+        return (definicao != null) ? definicao : "Palavra não encontrada.";
     }
 }
