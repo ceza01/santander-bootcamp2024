@@ -19,6 +19,10 @@ public class Desafio05 {
                 .mapToInt(Integer::intValue)
                 .average();
 
-        System.out.println(media);
+        if (media.isPresent()) {
+            System.out.println("Média dos números maiores que 5: " + media.getAsDouble());
+        } else {
+            System.out.println("Não há números maiores que 5 para calcular a média.");
+        }
     }
 }

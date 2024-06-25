@@ -17,6 +17,6 @@ public class Desafio02 {
                 .filter(isPar)
                 .reduce(0, Integer::sum);
 
-        System.out.println(somaPares);
+        System.out.println("A soma dos números é: " + somaPares);
     }
 }
