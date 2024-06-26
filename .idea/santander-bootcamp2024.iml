@@ -17,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/poo/collections/map/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/poo/stream-api/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/poo/banco-digital/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/poo/abstraindo-bootcamp/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
