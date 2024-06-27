@@ -1,4 +1,5 @@
 # Cofres Seguros: Dominando o Encapsulamento e Abstração
+
 ## Instruções:
 Você foi contratado para desenvolver um sistema de cofres seguros. O objetivo é criar dois tipos de cofres: um Cofre Digital, que é aberto por senha, e um Cofre Físico, que é aberto por chave.
 
