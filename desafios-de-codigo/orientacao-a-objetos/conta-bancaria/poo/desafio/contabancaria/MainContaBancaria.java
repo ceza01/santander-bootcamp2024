@@ -37,7 +37,7 @@ class ContaBancaria {
             saldo-=valor;
             System.out.println("Saque feito.");
         } else{
-            System.out.println("Saque não realizado.");
+            System.out.println("Saldo insuficiente. Saque não realizado.");
         }
         imprimirSaldo();
     }

@@ -7,7 +7,7 @@ public class Desafio {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String titular = scanner.next();
+        String titular = scanner.nextLine();
         int numeroConta = scanner.nextInt();
         double saldo = scanner.nextDouble();
         double taxaJuros = scanner.nextDouble();
@@ -46,6 +46,7 @@ class ContaPoupanca extends ContaBancaria {
         this.taxaJuros = taxaJuros;
     }
 
+    @Override
     public void exibirInformacoes() {
         super.exibirInformacoes();
         System.out.println("Taxa de juros: " + taxaJuros + "%");

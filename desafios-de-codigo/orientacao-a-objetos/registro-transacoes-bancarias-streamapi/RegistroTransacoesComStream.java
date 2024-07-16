@@ -15,24 +15,23 @@ public class RegistroTransacoesComStream {
 
         for (int i = 1; i <= quantidadeTransacoes; i++) {
 
-            char tipoTransacao = scanner.next().charAt(0);
+            char tipoTransacao = scanner.next().toLowerCase().charAt(0);
             double valorTransacao = scanner.nextDouble();
 
             Transacao transacao = new Transacao(tipoTransacao,valorTransacao);
             transacoes.add(transacao);
 
-            if (Character.toUpperCase(transacao.getTipo()) == 'D') {
+            if (transacao.getTipo() == 'd') {
                 saldo += valorTransacao;
-            } else if (Character.toUpperCase(transacao.getTipo()) == 'S') {
+            } else if (transacao.getTipo() == 's') {
                 saldo -= valorTransacao;
             }
         }
 
-        System.out.println("\nSaldo : " + saldo);
-        System.out.println("\nTransacoes:");
+        System.out.println("Saldo : " + saldo);
+        System.out.println("Transacoes:");
         transacoes.stream()
                 .map(transacao -> transacao.getTipo() + " de " + transacao.getValor())
-                .toList()
                 .forEach(System.out::println);
         scanner.close();
     }
