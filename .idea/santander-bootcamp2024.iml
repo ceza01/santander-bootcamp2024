@@ -23,6 +23,7 @@
       <sourceFolder url="file://$MODULE_DIR$/desafios-de-codigo/orientacao-a-objetos/heranca-bancaria" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/desafios-de-codigo/orientacao-a-objetos/registro-transacoes-bancarias" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/desafios-de-codigo/orientacao-a-objetos/registro-transacoes-bancarias-streamapi" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/design-patterns/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

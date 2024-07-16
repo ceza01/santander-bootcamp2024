@@ -12,7 +12,7 @@ public class SimulacaoBancaria {
                 case 1:
                     double valorDeposito = scanner.nextDouble();
                     saldo += valorDeposito;
-                    System.out.println("Saldo atual: " + saldo);
+                    System.out.printf("Saldo atual: %.1f%n", saldo);
                     break;
                 case 2:
                     double valorSaque = scanner.nextDouble();
@@ -20,11 +20,11 @@ public class SimulacaoBancaria {
                         System.out.println("Saldo insuficiente.");
                     } else {
                         saldo -= valorSaque;
-                        System.out.println("Saldo atual: " + saldo);
+                        System.out.printf("Saldo atual: %.1f%n ", saldo);
                     }
                     break;
                 case 3:
-                    System.out.println("Saldo atual: " + saldo);
+                    System.out.printf("Saldo atual: %.1f%n ", saldo);
                     break;
                 case 0:
                     System.out.println("Programa encerrado.");

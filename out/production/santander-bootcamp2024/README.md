@@ -1,21 +1,25 @@
-# Herança Bancária: Entendendo a Herança e Polimorfismo
-## Instruções:
-Após o sucesso no desenvolvimento do sistema básico de abertura de contas bancárias, o banco decidiu expandir seus serviços para oferecer diferentes tipos de contas. Agora, além das contas bancárias comuns, eles também oferecem contas poupança. Sua tarefa é implementar a herança e o polimorfismo no sistema, criando uma classe `ContaPoupanca` que herde da classe `ContaBancaria` anteriormente criada. A classe `ContaPoupanca` deve adicionar um novo atributo, taxa de juros, além dos atributos herdados.
-
-Dica: Utilize a herança para criar a classe `ContaPoupanca` que herde da classe `ContaBancaria` e adicione o atributo `taxaJuros`. Implemente o método `exibirInformacoes()` na classe `ContaPoupanca` para exibir as informações adicionais.
+# Registro de Transações Bancárias
+## Instruções
+Você está aprimorando o programa anterior e agora deseja utilizar a Stream API do Java para processar as transações bancárias de forma mais eficiente.
 
 ## Entrada:
-O programa deve solicitar ao usuário as informações necessárias para abrir uma conta poupança. A entrada deve ser feita via console (linha de comando) e deve incluir o número da conta (um valor inteiro), o nome do titular (uma sequência de caracteres), o saldo inicial da conta (um valor decimal) e a taxa de juros da conta poupança (um valor decimal).
+O programa solicitará ao usuário que informe o saldo inicial da conta.
+Em seguida, o programa solicitará a quantidade total de transações que o cliente deseja realizar.
+
+Entrada de Transações:
+Para cada transação, o programa solicitará ao usuário:
+O tipo de transação: Digite 'D' para depósito ou 'S' para saque.
+O valor da transação.
 
 ## Saída:
-Após receber as informações da conta poupança, o programa deve criar um objeto do tipo `ContaPoupanca` e exibir na tela as informações dessa conta, incluindo o número da conta, o nome do titular, o saldo atual e a taxa de juros. A saída deve ser formatada de forma clara e legível para o usuário.
+Utilizando a Stream API, o programa armazenará cada transação, que incluirá um tipo (Depósito ou Saque) e um valor.
+Ao final das transações, o programa exibirá o saldo final da conta e a lista de transações.
 
 ## Exemplos:
 A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
 | Entrada | Saída |
-|---------|-------|
-| Joao <br> 123456 <br> 1000.0 <br> 1.5 | Conta Poupanca: <br> Joao <br> 123456 <br> Saldo: R$ 1000.0 <br> Taxa de juros: 1.5% |
-| Ana <br> 789012 <br> 2500.0 <br> 3.0 | Conta Poupanca: <br> Ana <br> 789012 <br> Saldo: R$ 2500.0 <br> Taxa de juros: 3.0% |
-| Maria <br> 987654 <br> 500.0 <br> 2.5 | Conta Poupanca: <br> Maria <br> 987654 <br> Saldo: R$ 500.0 <br> Taxa de juros: 2.5% |
+| ------- | ----- |
+| 100<br>2<br>d<br>10<br>s<br>20 | Saldo: 90.0<br>Transações:<br>d de 10.0<br>s de 20.0 |
+| 5000<br>1<br>d<br>500 | Saldo: 5500.0<br>Transações:<br>d de 500.0 |
 
