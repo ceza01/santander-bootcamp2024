@@ -16,7 +16,15 @@ public class RegistroTransacoesComStream {
         for (int i = 1; i <= quantidadeTransacoes; i++) {
 
             char tipoTransacao = scanner.next().toLowerCase().charAt(0);
+
+            if (tipoTransacao != 'd' && tipoTransacao != 's') {
+                System.out.println("Tipo de transação inválido. Use 'D' para depósito ou 'S' para saque.");
+                continue;
+            }
+
             double valorTransacao = scanner.nextDouble();
+
+
 
             Transacao transacao = new Transacao(tipoTransacao,valorTransacao);
             transacoes.add(transacao);
@@ -28,7 +36,7 @@ public class RegistroTransacoesComStream {
             }
         }
 
-        System.out.println("Saldo : " + saldo);
+        System.out.printf("Saldo : %.1f%n", saldo);
         System.out.println("Transacoes:");
         transacoes.stream()
                 .map(transacao -> transacao.getTipo() + " de " + transacao.getValor())
